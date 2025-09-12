@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:sqlserver://DESKTOP-I1SMM2J\SQL;databaseName=githubcopilot;trustServerCertificate=true
-    username: ecom
-    password: Ecom@12345
+    url: jdbc:sqlserver://localhost:1433;databaseName=githubcopilot;trustServerCertificate=true
+    username: sa
+    password: Sql@12345
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
   jpa:

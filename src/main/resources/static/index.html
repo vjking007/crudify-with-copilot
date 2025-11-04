@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideShare - Your Ride, Your Way</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">RideShare</div>
+            <ul class="nav-menu">
+                <li><a href="#ride">Ride</a></li>
+                <li><a href="#drive">Drive</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#help">Help</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-secondary">Log in</button>
+                <button class="btn-primary">Sign up</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Go anywhere with RideShare</h1>
+                <p class="hero-subtitle">Request a ride, hop in, and go.</p>
+
+                <!-- Ride Booking Form -->
+                <div class="booking-card">
+                    <div class="booking-tabs">
+                        <button class="tab-btn active" data-tab="ride">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                            </svg>
+                            Ride
+                        </button>
+                        <button class="tab-btn" data-tab="drive">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            Drive
+                        </button>
+                    </div>
+
+                    <div class="booking-content active" id="ride-content">
+                        <form class="booking-form">
+                            <div class="input-group">
+                                <div class="input-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                </div>
+                                <input type="text" placeholder="Enter pickup location" class="form-input">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <rect x="9" y="9" width="6" height="6"/>
+                                    </svg>
+                                </div>
+                                <input type="text" placeholder="Enter destination" class="form-input">
+                            </div>
+                            <button type="submit" class="btn-submit">Request now</button>
+                        </form>
+                    </div>
+
+                    <div class="booking-content" id="drive-content">
+                        <div class="drive-info">
+                            <h3>Drive when you want, make what you need</h3>
+                            <p>Make money on your schedule with deliveries or rides—or both. You can use your own car or choose a rental through RideShare.</p>
+                            <button class="btn-submit">Get started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggestions Section -->
+    <section class="suggestions">
+        <div class="container">
+            <h2>Suggestions</h2>
+            <div class="suggestions-grid">
+                <div class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/>
+                        </svg>
+                    </div>
+                    <h3>Ride</h3>
+                    <p>Go anywhere with RideShare. Request a ride, hop in, and go.</p>
+                    <a href="#" class="card-link">Details →</a>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+                        </svg>
+                    </div>
+                    <h3>Reserve</h3>
+                    <p>Reserve your ride in advance so you can relax on the day of your trip.</p>
+                    <a href="#" class="card-link">Details →</a>
+                </div>
+
+                <div class="suggestion-card">
+                    <div class="suggestion-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"/>
+                        </svg>
+                    </div>
+                    <h3>Travel Intercity</h3>
+                    <p>Go far, pay less. Travel between cities with RideShare Intercity.</p>
+                    <a href="#" class="card-link">Details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <div class="feature-placeholder driver-bg"></div>
+                    </div>
+                    <div class="feature-content">
+                        <h2>Drive when you want, make what you need</h2>
+                        <p>Make money on your schedule with deliveries or rides—or both. You can use your own car or choose a rental through RideShare.</p>
+                        <button class="btn-feature">Get started</button>
+                        <a href="#" class="feature-link">Already have an account? Sign in →</a>
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-content">
+                        <h2>The RideShare you know, reimagined for business</h2>
+                        <p>RideShare for Business is a platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
+                        <button class="btn-feature">Get started</button>
+                        <a href="#" class="feature-link">Check out our solutions →</a>
+                    </div>
+                    <div class="feature-image">
+                        <div class="feature-placeholder business-bg"></div>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <div class="feature-placeholder safety-bg"></div>
+                    </div>
+                    <div class="feature-content">
+                        <h2>Your safety drives us</h2>
+                        <p>Whether you're in the back seat or behind the wheel, your safety is essential. We are committed to doing our part, and technology is at the heart of our approach.</p>
+                        <button class="btn-feature">Learn more</button>
+                        <a href="#" class="feature-link">See safety features →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>It's easier in the apps</h2>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        Download on the App Store
+                    </a>
+                    <a href="#" class="app-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                        </svg>
+                        Get it on Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our offerings</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Ride</a></li>
+                        <li><a href="#">Drive</a></li>
+                        <li><a href="#">Deliver</a></li>
+                        <li><a href="#">Eat</a></li>
+                        <li><a href="#">RideShare for Business</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Global citizenship</h4>
+                    <ul>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Diversity and Inclusion</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Travel</h4>
+                    <ul>
+                        <li><a href="#">Reserve</a></li>
+                        <li><a href="#">Airports</a></li>
+                        <li><a href="#">Cities</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Terms</a>
+                </div>
+
+                <div class="footer-copyright">
+                    &copy; 2024 RideShare Technologies Inc.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
